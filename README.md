@@ -1,3 +1,3 @@
 # media-crawler
 The program can crawl tv series "index of" website and create a new html file with a list of all the media.
-Just provide the link of parent page.
+Just provide the link of parent page and the file types (.mkv, .mp4, etc.).

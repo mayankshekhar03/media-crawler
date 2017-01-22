@@ -16,7 +16,7 @@ def tv_series_url_list(max_pages):
         plaintext = scode.text
         soup = bs(plaintext, "lxml")
         for link in soup.find_all('a'):
-            if 'tv series name' in link.string:
+            if 'media file type' in link.get('href'):
                 href = "http://tv/series/parent/directory" + "s" + str(page) + "/" + link.get('href')
                 title = link.string
                 with open('tv_series_name.html', 'a') as myfile:
